@@ -5,15 +5,16 @@ change.
 
 ## Current Phase
 
-- Complete (01-design-system)
+- 02-editor (navbar, project sidebar shell, dialog pattern)
 
 ## Current Goal
 
-- Pick up the next item in `context/feature-specs/` when ready.
+- Ship editor chrome per `context/feature-specs/02-editor.md`; next spec when ready.
 
 ## Completed
 
 - 01-design-system — shadcn/ui initialized; Button, Card, Dialog, Input, Tabs, Textarea, ScrollArea added; `lib/utils.ts` (`cn`); `lucide-react`; `dark` on `<html>`; app-level `components/home-preview.tsx` smoke composition; `npm run build` and `npm run lint` pass
+- 02-editor — `components/editor/editor-navbar.tsx` (fixed-height bar, sidebar toggle with `PanelLeftOpen` / `PanelLeftClose`, three zones, dark card + bottom border); `components/editor/project-sidebar.tsx` (fixed overlay, slide-in, `isOpen`, Projects header + close, Tabs My Projects / Shared placeholders, full-width New Project + `Plus`); `components/editor/editor-dialog-pattern.tsx` (popover token shell: title, description, footer slots; no modal); `app/page.tsx` composes navbar + sidebar + canvas placeholder; build + lint clean
 
 ## In Progress
 
@@ -21,7 +22,7 @@ change.
 
 ## Next Up
 
-- Next feature spec in `context/feature-specs/`
+- Next feature spec in `context/feature-specs/` after `02-editor.md`
 
 ## Open Questions
 
